@@ -2,22 +2,21 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>�r���S�J�[�h</title>
+    <title>ビンゴカード</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a href="image_selection.html">画像選択ページへ</a>
     <div id="bingo-container">
         <div class="bingo-wrapper">
-            <button class="generate-button" id="generate-left">���̃r���S�J�[�h�𐶐�</button>
+            <button class="generate-button" id="generate-left">左のビンゴカードを生成</button>
             <div id="left-bingo" class="bingo-card red-border"></div>
         </div>
         <div class="bingo-wrapper">
-            <button class="generate-button" id="generate-right">�E�̃r���S�J�[�h�𐶐�</button>
+            <button class="generate-button" id="generate-right">右のビンゴカードを生成</button>
             <div id="right-bingo" class="bingo-card blue-border"></div>
         </div>
     </div>
-    <div id="images-container-left" class="images-container"></div>
-    <div id="images-container-right" class="images-container"></div>
-    <script src="script.js"></script>
+    <script src="bingo_card.js"></script>
 </body>
 </html>

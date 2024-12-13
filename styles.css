@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bingo-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+}
+
+.bingo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bingo-card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin: 20px;
+}
+
+.bingo-card div {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.red-border {
+    border: 2px solid red;
+}
+
+.blue-border {
+    border: 2px solid blue;
+}
+
+.marked-red {
+    background-color: red;
+    opacity: 0.5;
+}
+
+.marked-blue {
+    background-color: blue;
+    opacity: 0.5;
+}
+
+.generate-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    margin: 20px;
+    max-width: 800px;
+}
+
+.images-container div {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.images-container div.selected {
+    border: 2px solid green;
+    filter: grayscale(100%);
+}
+
+.images-container div.selected::after {
+    content: "✖";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: red;
+}
+
+.selected-count {
+    margin: 10px 0;
+}
